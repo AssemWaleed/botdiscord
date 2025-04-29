@@ -2,10 +2,11 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 # تحميل المتغيرات البيئية
 load_dotenv()
-
+keep_alive()
 # إعداد البوت مع الصلاحيات المطلوبة
 intents = discord.Intents.default()
 intents.message_content = True
